@@ -1,0 +1,40 @@
+{
+  "name": "@estidlore/types",
+  "version": "1.0.0",
+  "description": "Basic types definitions for Typescript",
+  "author": {
+    "name": "Estid Felipe Lozano Reyes",
+    "url": "https://github.com/estidlore"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "eslint": "^8.33.0",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.5"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "tools",
+    "ts",
+    "types",
+    "typescript",
+    "utils"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/estidlore/types"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --config .prettierrc.js --write src/**/*.ts",
+    "lint": "eslint --ext .ts src --fix",
+    "publish:major": "npm version major && npm publish",
+    "publish:minor": "npm version minor && npm publish",
+    "publish:patch": "npm version patch && npm publish"
+  },
+  "types": "src/index.d.ts"
+}

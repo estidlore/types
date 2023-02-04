@@ -1,0 +1,5 @@
+src/**/*.d.ts
+.vscode
+lib
+node_modules
+package-lock.json
